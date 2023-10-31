@@ -2,12 +2,12 @@ body {
     font-family: Inter;
 }
 .container {
-   text-align: center;
-    padding-top: 50px;
-    width: 1200px;
-    height: 892px;
-    border: 1px #FFFFFF;
-    background-color: #B0C6FF;
+text-align: center;
+margin: 0 auto;
+padding-top: 50px;
+width: 1200px;
+border: 1px #FFFFFF;
+background-color: #B0C6FF;
 }
 
 .header {  
