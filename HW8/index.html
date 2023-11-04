@@ -14,8 +14,8 @@
     <title>HW8</title>
   </head>
   <body>
-    <div class="container head">
-      <div class="header">
+    <header class="header">
+      <div class="container head">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">Homepage</li>
@@ -25,26 +25,30 @@
             <li class="nav__item">Contacts</li>
           </ul>
         </nav>
-      </div>
+      
       <div class="info">
         <h1 class="info__title">Design and layout</h1>
         <p class="info__desc">
           Lorem Ipsum is fish text often used in print and web design. Lorem
-          Ipsum has been the standard "fish" for Latin texts since the early
+          Ipsum <br> has been the standard "fish" for Latin texts since the early
           16th century.
         </p>
       </div>
+
       <button type="button" class="btn">WRITE ME</button>
-    </div>
+    </header>
     <section class="about__me">
-      <h2 class="about__title">About me</h2>
-      <p class="about__desc">
-        About meLorem Ipsum is fish text often used in print and web design.
-        Lorem Ipsum has been the standard "fish" for Latin texts since the early
-        16th century.
-      </p>
+      <div class="container about">
+        <h2 class="about__title">About me</h2>
+        <p class="about__desc">
+          About meLorem Ipsum is fish text often used in print and web design.
+          Lorem Ipsum has been the standard "fish" for Latin texts since the early
+          16th century.
+        </p>
+      </div>
     </section>
-    <div class="container projects">
+    <section class="projects">
+    <div class="container project">
       <div class="prj">
         <img
           class="img"
@@ -112,6 +116,8 @@
         <p class="prj__desc">projects</p>
       </div>
     </div>
+    </section>
+    <section class="video__box">
     <div class="container video">
       <header class="header__video">
         <h2 class="video__title">How do I work</h2>
@@ -133,9 +139,12 @@
         allowfullscreen
       ></iframe>
     </div>
-    <footer class="container footer">
+  </section>
+    <footer class="footer">
+      <div class="container foot">
       <h6 class="footer__title">John Smith</h6>
       <p class="footer__text">(c) 2018. All rights reserved.</p>
+    </div>
     </footer>
   </body>
 </html>

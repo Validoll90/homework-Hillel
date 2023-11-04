@@ -4,22 +4,22 @@ body {
 .container {
 text-align: center;
 margin: 0 auto;
-padding-top: 50px;
 width: 1200px;
-border: 1px #FFFFFF;
-background-color: #B0C6FF;
-}
 
-.header {  
-padding-bottom: 50px;
+}
+.head {
 font-weight: 700;
 font-size: 48px;
 color: #FFFFFF;
-text-align: center;
+}
+
+.header {  
+width: 100%;
+background-color: #EEEFF1;
 }
 
 .card { 
-    padding-top: 20px;
+padding-top: 20px;
 margin: 10px;
 display: inline-block;
 width: 239px;
