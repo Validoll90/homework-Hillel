@@ -16,7 +16,7 @@ body {
     }
     
     .nav__list {
-    padding-left: 399px;
+text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
@@ -27,9 +27,81 @@ body {
     color: #34547A;
     padding-right: 42px;
     display: inline-block;
+    position: relative;
     }
 
-    .info__title {
+.nav__link__1,
+.nav__link__2,
+.nav__link__3,
+.nav__link__4,
+.nav__link__5 {
+    color: #34547A;
+}
+
+.nav__link__1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    border: 3px solid black;
+}
+    
+.nav__link__2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    width: 55px;
+    height: 55px;
+    opacity: 0.2;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.nav__link__3::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -15px;
+    left: -3px;
+    width: 55px;
+    height: 55px;
+    opacity: 0.5;
+    background-position: 1px;
+background-image: url("https://css-tricks.com/wp-content/uploads/2009/10/navigation-sprites.svg");   
+}
+
+.nav__link__4::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -17px;
+    left: 4px;
+    width: 55px;
+    height: 55px;
+    opacity: 0.5;
+    background-position: top 1px;
+background-image: url("https://css-tricks.com/wp-content/uploads/2009/10/navigation-sprites.svg");   
+}
+
+.nav__link__5::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -17px;
+    left: 4px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    background-position: left -60px;
+background-image: url("https://css-tricks.com/wp-content/uploads/2009/10/navigation-sprites.svg");   
+}
+
+
+.info__title {
     padding-left: 399px;
     margin-top: 151px;
     font-weight: 500;
