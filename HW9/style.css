@@ -1,11 +1,14 @@
 body {
   font-family: "Red Hat Display", sans-serif;
+  margin: 0 auto;
+  width: 100%;
 }
 .container {
   width: 1440px;
 }
 
 .header {
+  margin: 0 auto;
   background: url(./img/image1.png) no-repeat;
   background-position: bottom 19px right -40px;
   background-color: #f9f6f5;
@@ -96,24 +99,27 @@ body {
 }
 
 .companies {
-  width: 1440px;
+  margin: 0 auto;
   padding: 134px 130px;
 }
 
-.companies__items {
-  display: inline-block;
-  margin: 0 47px;
-}
 .companies__list {
-  border: 1px solid #eeeeee;
+  display: flex;
+  gap: 100px;
+  justify-content: space-around;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding: 42px 0;
 }
 
 .main {
+  margin: 0 auto;
   padding: 0 100px;
-  width: 1440px;
 }
-
+.header__main {
+  display: flex;
+  justify-content: space-between;
+}
 .main__title {
   font-weight: 500;
   font-size: 56px;
@@ -132,29 +138,16 @@ body {
 }
 
 .main__link {
-  position: relative;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #222222;
-  position: absolute;
-  right: 35px;
-  top: 35%;
   text-decoration: underline;
 }
-.header__main {
-  position: relative;
-}
-.main__link::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  right: -55px;
-  top: 7px;
-  background-repeat: no-repeat;
-  background-image: url("./img/vector-main.png");
+.main__link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .cards {
@@ -223,18 +216,16 @@ body {
 }
 
 .termins {
+  padding: 50px 0;
+  margin: 0 auto;
   background-color: #fdf8f5;
-  padding: 58px 175px;
 }
 
 .termin__list {
   display: flex;
-  gap: 350px;
+  justify-content: space-around;
 }
 
-.termin__item {
-  display: inline-block;
-}
 .termin__title {
   padding-bottom: 4px;
   font-weight: 700;
@@ -250,11 +241,11 @@ body {
   color: #555555;
   margin-top: 30px;
 }
-.beauty__article {
-  margin-top: 130px;
-  padding: 0 100px;
-  width: 1240px;
+.beauty {
+  margin: 0 auto;
+  padding: 130px;
   display: flex;
+  justify-content: center;
   gap: 32px;
 }
 .beauty__title {
@@ -282,13 +273,13 @@ body {
 }
 
 .designer {
-  padding-left: 63px;
-  margin-top: 130px;
+  padding-bottom: 130px;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  gap: 54px;
 }
-.designer__photo {
-  margin-right: 54px;
-}
+
 .designer__title {
   margin-top: 30px;
   font-weight: 500;
@@ -324,41 +315,56 @@ body {
 }
 
 .footer {
-  width: 1440px;
+  /* display: flex;
+  justify-content: space-around; */
+  margin: 0 auto;
   background-color: #fafafa;
   padding: 103px 100px 52px;
 }
+
+.footer__head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
 .footer__title {
-  display: inline-block;
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
   color: #222222;
   margin-bottom: 64px;
 }
-.buttons__footer {
-  float: right;
-  display: inline-block;
+.btn__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 386px;
   height: 56px;
-  color: #555555;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   background-color: #ffffff;
 }
+.email {
+  display: block;
+  height: 100%;
+  width: 85%;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+  font-weight: 400;
+}
 .footer__btn {
-  width: 103px;
-  height: 40px;
-  background-color: #402f2c;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  margin: 10px 0;
-  float: right;
+  background-color: #402f2c;
+  padding: 15px;
 }
+
 .contacts {
+  padding-top: 59px;
   display: flex;
   justify-content: space-around;
 }
@@ -388,10 +394,15 @@ body {
   color: #222222;
 }
 .footer__item,
-.contact__item {
+.contact__item,
+.footer__links,
+.contact__links {
   padding-top: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+}
+.icon__link {
+  padding-right: 10px;
 }

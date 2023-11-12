@@ -12,8 +12,9 @@
       rel="stylesheet"
     />
     <title>HW9</title>
+    
   </head>
-  <body>
+  <div>
     <div class="container header">
       <div class="header__box">
         <h2 class="header__logo">Dudeshape</h2>
@@ -27,13 +28,13 @@
         </nav>
         <ul class="info__list">
           <li class="info__items">
-            <img src="./img/ava.jpeg" width="30px" height="30px" alt="img" />
+            <a href="#"><img src="./img/Profile.png" alt="img" /></a>
           </li>
           <li class="info__items">
-            <img src="./img/bag.jpeg" width="30px" height="30px" alt="img" />
+            <a href="#"><img src="./img/Buy.png" alt="img" /></a>
           </li>
           <li class="info__items">
-            <img src="./img/list.jpeg" width="30px" height="30px" alt="img" />
+            <a href="#"><img src="./img/Frame.png" alt="img" /></a>
           </li>
         </ul>
       </div>
@@ -41,7 +42,7 @@
         <h1 class="wrapper__title">Get Your Best Cosmetic Products Here</h1>
         <p class="wrapper__desk">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
+          industry. Lorem - Ipsum has been the industry's standard dummy
         </p>
         <div class="search__box">
           <input type="search" />
@@ -52,7 +53,7 @@
         <button class="shop__btn" type="button">Shop Now</button>
       </div>
     </div>
-    <section class="companies">
+    <div class="container companies">
       <ul class="companies__list">
         <li class="companies__items">
           <img src="./img/airbnb.png" alt="img" />
@@ -65,15 +66,20 @@
         <li class="companies__items"><img src="./img/walm.png" alt="img" /></li>
         <li class="companies__items"><img src="./img/fed.png" alt="img" /></li>
       </ul>
-    </section>
-    <section class="main">
+    </div>
+    <section class="container main">
       <header class="header__main">
+        <div class="main__text">
         <h1 class="main__title">Our Porular Product</h1>
         <p class="main__desc">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
+      </div>
+        <div class="main__link">
         <a class="main__link" href="#">Discover Our Products</a>
+        <img src="./img/vector-main.png" width="20px" height="20px" alt="img">
+      </div>
       </header>
       <div class="cards">
         <div class="card__box">
@@ -120,7 +126,7 @@
         </li>
       </ul>
     </div>
-    <div class="beauty__article">
+    <div class="container beauty">
       <div class="beauty__text">
         <h2 class="beauty__title">The Perfect Beauty Of You</h2>
         <p class="beauty__desc">
@@ -136,9 +142,9 @@
         </p>
         <button class="beauty__btn" type="button">Shop Now</button>
       </div>
-      <img src="./img/beauty.png" width="600" height="600" alt="img" />
+      <img src="./img/beauty.png" alt="img" />
     </div>
-    <section class="designer">
+    <div class="container designer">
       <img
         class="designer__photo"
         src="./img/designer.png"
@@ -148,11 +154,12 @@
       />
       <div class="designer__info">
         <h3 class="designer__title">Amazing Cosmetic</h3>
+        <div class="star__box"><img class="stars" src="./img/stars.svg" width="19px" alt="img" />
         <img class="stars" src="./img/stars.svg" width="19px" alt="img" />
         <img class="stars" src="./img/stars.svg" width="19px" alt="img" />
         <img class="stars" src="./img/stars.svg" width="19px" alt="img" />
         <img class="stars" src="./img/stars.svg" width="19px" alt="img" />
-        <img class="stars" src="./img/stars.svg" width="19px" alt="img" />
+        </div>
         <p class="designer__desc">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -162,14 +169,18 @@
         <h3 class="designer__name">Rusmin Islam</h3>
         <p class="designer__trade">Designer</p>
       </div>
-    </section>
-    <footer class="footer">
+    </div>
+    <footer class="container footer">
       <div class="footer__head">
         <h6 class="footer__title">Subscribe to Get Our Letest News</h6>
-        <div class="buttons__footer">
-          <input type="email" name="Enter email" />
-          <button class="footer__btn" type="button">Subscribe</button>
-        </div>
+      <div class="btn__box">
+        <form action="#">
+          <input class="email" type="email" value="Enter email">
+       </form>
+      <form action="#">
+        <input class="footer__btn" type="button" value="Subscribe" >
+      </form>
+    </div>
       </div>
       <hr />
       <div class="contacts">
@@ -182,15 +193,15 @@
         </div>
         <ul class="footer__link">
           Quick Link
-          <li class="footer__item">Home</li>
-          <li class="footer__item">Products</li>
-          <li class="footer__item">About Us</li>
+          <li class="footer__item"><a class="footer__links" href="#">Home</a></li>
+          <li class="footer__item"><a class="footer__links" href="#">Products</a></li>
+          <li class="footer__item"><a class="footer__links" href="#">About Us</a></li>
         </ul>
         <ul class="footer__contacts">
           Contact Us
-          <li class="contact__item">oyasimnaeem@email.com</li>
-          <li class="contact__item">+123456789</li>
-          <li class="contact__item"><img src="./img/footer.png" alt="" /></li>
+          <li class="contact__item"> <a class="contact__links" href="#">oyasimnaeem@email.com</a></li>
+          <li class="contact__item"><a class="contact__links" href="#">+123456789</a></li>
+          <li class="contact__item"> <a class="icon__link" href="#"> <img src="./img/icon1.png" alt="img"></a> <a class="icon__link" href="#"> <img src="./img/icon2.png" alt="img"></a><a class="icon__link" href="#"> <img src="./img/inst.png" alt="img"></a></li>
         </ul>
       </div>
     </footer>
