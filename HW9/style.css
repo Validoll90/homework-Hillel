@@ -1,27 +1,22 @@
 body {
   font-family: "Red Hat Display", sans-serif;
-  margin: 0 auto;
-  width: 100%;
 }
 .container {
   width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
-  margin: 0 auto;
   background: url(./img/image1.png) no-repeat;
   background-position: bottom 19px right -40px;
+}
+.color {
   background-color: #f9f6f5;
 }
-
 .header__box {
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 72px;
-  width: 1200px;
+  padding-top: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .header__logo {
   font-weight: 700;
@@ -31,10 +26,10 @@ body {
   font-style: italic;
   color: #222222;
 }
-
-.items {
-  display: inline-block;
-  padding-right: 40px;
+.header__list {
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link__head {
@@ -43,11 +38,12 @@ body {
   line-height: 20px;
   color: #222222;
 }
-
-.info__items {
-  display: inline-block;
-  padding-left: 24px;
+.info__list {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
+
 .wrapper {
   padding-top: 108px;
   padding-left: 100px;
@@ -214,7 +210,9 @@ body {
   color: #222222;
   margin-left: 140px;
 }
-
+.termins__color {
+  background-color: #fdf8f5;
+}
 .termins {
   padding: 50px 0;
   margin: 0 auto;
@@ -313,12 +311,11 @@ body {
   line-height: 24px;
   color: #555555;
 }
-
-.footer {
-  /* display: flex;
-  justify-content: space-around; */
-  margin: 0 auto;
+.footer__color {
   background-color: #fafafa;
+}
+.footer {
+  margin: 0 auto;
   padding: 103px 100px 52px;
 }
 
