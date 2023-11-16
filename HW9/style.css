@@ -10,15 +10,15 @@ body {
   background: url(./img/image1.png) no-repeat;
   background-position: bottom 19px right -40px;
 }
-.header__background {
+.header-background {
   background-color: #f9f6f5;
 }
-.header__box {
+.header-box {
   padding-top: 100px;
   display: flex;
   justify-content: space-around;
 }
-.header__logo {
+.header-box__logo {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -38,7 +38,7 @@ body {
   line-height: 20px;
   color: #222222;
 }
-.header__info__list {
+.header-info__list {
   gap: 20px;
   display: flex;
   justify-content: space-between;
@@ -67,7 +67,7 @@ body {
   line-height: 32px;
   color: #555555;
 }
-.wrapper__search__box {
+.wrapper__search-box {
   position: relative;
   border: 1px solid gray;
   margin-top: 30px;
@@ -76,14 +76,14 @@ body {
   background-color: #ffffff;
 }
 
-.search__btn {
+.search-btn {
   position: absolute;
   right: 8px;
   bottom: 8px;
   top: 8px;
 }
 
-.shop__btn {
+.shop-btn {
   margin-top: 60px;
   width: 148px;
   height: 56px;
@@ -112,7 +112,7 @@ body {
   margin: 0 auto;
   padding: 0 100px;
 }
-.header__main {
+.header-main {
   display: flex;
   justify-content: space-between;
 }
@@ -140,13 +140,13 @@ body {
   color: #222222;
   text-decoration: underline;
 }
-.main__links {
+.main-links {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.main__cards {
+.main-cards {
   padding-bottom: 130px;
   width: 1240px;
   display: flex;
@@ -154,7 +154,7 @@ body {
   gap: 40px;
 }
 
-.main__cards__title {
+.main-cards__title {
   padding: 0 32px;
   font-weight: 500;
   font-size: 40px;
@@ -163,7 +163,7 @@ body {
   margin-top: 20px;
   margin-bottom: 16px;
 }
-.main__cards__description {
+.main-cards__description {
   padding: 0 32px;
   width: 500px;
   font-weight: 400;
@@ -172,21 +172,21 @@ body {
   color: #555555;
 }
 
-.main__cards__box,
-.main__cards__boxtwo {
+.main-cards__box,
+.main-cards__boxtwo {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid rgb(226, 225, 225);
   padding-bottom: 30px;
 }
-.main__cards__button {
+.main-cards__button {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 47px;
   display: inline-block;
 }
 
-.cards__btn {
+.cards-btn {
   background-color: #402f2c;
   font-weight: 500;
   font-size: 18px;
@@ -195,7 +195,7 @@ body {
   padding: 16px 32px;
   margin-right: 20px;
 }
-.carts__btn {
+.carts-btn {
   padding: 16px 32px;
   border: 1px solid #b7ada7;
   font-weight: 500;
@@ -203,14 +203,14 @@ body {
   line-height: 24px;
   color: #402f2c;
 }
-.cards__price {
+.cards-price {
   font-weight: 500;
   font-size: 30px;
   line-height: 32px;
   color: #222222;
   margin-left: 140px;
 }
-.termins__background {
+.termins-background {
   background-color: #fdf8f5;
 }
 .termins {
@@ -219,12 +219,12 @@ body {
   background-color: #fdf8f5;
 }
 
-.termins__list {
+.termins-list {
   display: flex;
   justify-content: space-around;
 }
 
-.termins__title {
+.termins-list__title {
   padding-bottom: 4px;
   font-weight: 700;
   font-size: 56px;
@@ -232,7 +232,7 @@ body {
   color: #222222;
   border-bottom: 3px solid black;
 }
-.termins__description {
+.termins-list__description {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
@@ -246,14 +246,14 @@ body {
   justify-content: center;
   gap: 32px;
 }
-.beauty__title {
+.beauty-text__title {
   font-weight: 500;
   font-size: 56px;
   line-height: 70px;
   color: #000000;
   margin-bottom: 20px;
 }
-.beauty__description {
+.beauty-text__description {
   width: 600px;
   font-weight: 400;
   font-size: 20px;
@@ -261,7 +261,7 @@ body {
   color: #555555;
   margin-bottom: 50px;
 }
-.beauty__btn {
+.beauty-text__btn {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -278,7 +278,7 @@ body {
   gap: 54px;
 }
 
-.designer__title {
+.designer-info__title {
   margin-top: 30px;
   font-weight: 500;
   font-size: 30px;
@@ -290,7 +290,7 @@ body {
   margin-top: 12px;
   margin-bottom: 43px;
 }
-.designer__description {
+.designer-info__description {
   width: 608px;
   font-weight: 400;
   font-size: 20px;
@@ -298,20 +298,20 @@ body {
   color: #555555;
   margin-bottom: 79px;
 }
-.designer__name {
+.designer-info__name {
   font-weight: 500;
   font-size: 30px;
   line-height: 40px;
   color: #222222;
   margin-bottom: 10px;
 }
-.designer__trade {
+.designer-info__trade {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #555555;
 }
-.footer__background {
+.footer-background {
   background-color: #fafafa;
 }
 .footer {
@@ -319,20 +319,20 @@ body {
   padding: 103px 100px 52px;
 }
 
-.footer__head {
+.footer-head {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #dddddd;
 }
 
-.footer__title {
+.footer-head__title {
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
   color: #222222;
   margin-bottom: 64px;
 }
-.footer__btn__box {
+.footer-head__btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -340,7 +340,7 @@ body {
   height: 56px;
   background-color: #ffffff;
 }
-.footer__email {
+.footer-email {
   display: block;
   height: 100%;
   width: 85%;
@@ -350,7 +350,7 @@ body {
   color: #555555;
   font-weight: 400;
 }
-.footer__btn {
+.footer-btn {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -360,13 +360,13 @@ body {
   padding: 15px;
 }
 
-.footer__nav {
+.footer-nav {
   padding-top: 59px;
   display: flex;
   justify-content: space-around;
 }
 
-.footer__nav__logo {
+.footer-nav__logo {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -374,7 +374,7 @@ body {
   font-style: italic;
   color: #222222;
 }
-.footer__nav__description {
+.footer-nav__description {
   margin-top: 39px;
   width: 326px;
   font-weight: 400;
