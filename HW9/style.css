@@ -2,7 +2,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -45,13 +45,13 @@ body {
 }
 
 .wrapper {
-  padding-top: 108px;
+  margin-top: 108px;
   padding-left: 100px;
   padding-bottom: 109px;
 }
 
 .wrapper__title {
-  width: 621px;
+  max-width: 621px;
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 56px;
@@ -60,7 +60,7 @@ body {
 }
 
 .wrapper__description {
-  width: 516px;
+  max-width: 516px;
   margin-top: 30px;
   font-weight: 400;
   font-size: 20px;
@@ -71,8 +71,8 @@ body {
   position: relative;
   border: 1px solid gray;
   margin-top: 30px;
-  width: 326px;
-  height: 48px;
+  max-width: 326px;
+  max-height: 48px;
   background-color: #ffffff;
 }
 
@@ -85,8 +85,8 @@ body {
 
 .shop-btn {
   margin-top: 60px;
-  width: 148px;
-  height: 56px;
+  max-width: 148px;
+  max-height: 56px;
   background-color: #402f2c;
   font-weight: 500;
   font-size: 18px;
@@ -125,7 +125,7 @@ body {
 }
 
 .main__description {
-  width: 700px;
+  max-width: 700px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -148,7 +148,7 @@ body {
 
 .main-cards {
   padding-bottom: 130px;
-  width: 1240px;
+  max-width: 1240px;
   display: flex;
   justify-content: space-around;
   gap: 40px;
@@ -165,7 +165,7 @@ body {
 }
 .main-cards__description {
   padding: 0 32px;
-  width: 500px;
+  max-width: 500px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -254,7 +254,7 @@ body {
   margin-bottom: 20px;
 }
 .beauty-text__description {
-  width: 600px;
+  max-width: 600px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -291,7 +291,7 @@ body {
   margin-bottom: 43px;
 }
 .designer-info__description {
-  width: 608px;
+  max-width: 608px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -402,4 +402,76 @@ body {
 }
 .icon__link {
   padding-right: 10px;
+}
+
+@media screen and (max-width: 440px) {
+  .header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper {
+    padding: 100px 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 5px;
+  }
+  .header-main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-cards {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .termins-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .beauty {
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 5px;
+  }
+  .footer-head {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 2300px) {
+  .companies__list {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .designer {
+    flex-wrap: wrap;
+    padding: 5px;
+  }
 }
